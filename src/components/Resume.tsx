@@ -51,7 +51,7 @@ const Resume = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow transition-all duration-300"
+              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow transition-all duration-300 cursor-pointer"
               asChild
             >
               <a 
