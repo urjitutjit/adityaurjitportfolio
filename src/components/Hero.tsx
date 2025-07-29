@@ -53,6 +53,14 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-hero hover:shadow-glow transition-all duration-300 group"
+              onClick={() => window.location.href = '/auth'}
+            >
+              Get Started
+              <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-gradient-hero hover:shadow-glow transition-all duration-300 group"
               onClick={() => scrollToSection('projects')}
             >
               Explore My Work
