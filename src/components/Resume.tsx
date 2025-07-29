@@ -38,7 +38,7 @@ const Resume = () => {
     <section id="resume" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 transition-transform duration-300 cursor-default">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 hover:drop-shadow-glow transition-all duration-300 cursor-default">
             Resume & <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">Certifications</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -51,7 +51,7 @@ const Resume = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow transition-all duration-300 cursor-pointer"
+              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow hover:drop-shadow-glow transition-all duration-300 cursor-pointer"
               asChild
             >
               <a 
@@ -82,7 +82,7 @@ const Resume = () => {
                   className="block cursor-pointer"
                 >
                   <Card 
-                    className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow transition-all duration-300 group cursor-pointer"
+                    className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow hover:drop-shadow-glow transition-all duration-300 group cursor-pointer"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardContent className="p-6">
@@ -114,7 +114,7 @@ const Resume = () => {
                 </a>
               ) : (
                 <Card 
-                  className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow transition-all duration-300 group"
+                  className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow hover:drop-shadow-glow transition-all duration-300 group"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardContent className="p-6">
