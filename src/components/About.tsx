@@ -50,7 +50,6 @@ const About = () => {
                   <p className="text-foreground font-medium">Full-Stack Development</p>
                   <p className="text-muted-foreground">MERN Stack, Java, Python</p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <Badge variant="secondary">2+ Years</Badge>
                     <Badge variant="outline">Active Learner</Badge>
                   </div>
                 </div>
