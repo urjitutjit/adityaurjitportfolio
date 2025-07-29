@@ -35,26 +35,16 @@ const Resume = () => {
     <section id="resume" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Resume & <span className="bg-gradient-hero bg-clip-text text-transparent">Certifications</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 transition-transform duration-300 cursor-default">
+            Resume & <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">Certifications</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Download my resume or view it online to see my complete professional background, 
             skills, and project details.
           </p>
           
-          {/* Resume Download/View Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button 
-              size="lg" 
-              className="bg-gradient-hero hover:shadow-glow transition-all duration-300 group"
-              asChild
-            >
-              <a href="/Aditya_Urjit_Resume.pdf" download>
-                <Download className="h-5 w-5 mr-2 group-hover:translate-y-1 transition-transform" />
-                Download Resume
-              </a>
-            </Button>
+          {/* Resume View Button */}
+          <div className="flex justify-center mb-16">
             <Button 
               variant="outline" 
               size="lg"

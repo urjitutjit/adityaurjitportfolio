@@ -41,8 +41,8 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            My <span className="bg-gradient-hero bg-clip-text text-transparent">Work</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 transition-transform duration-300 cursor-default">
+            My <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">Work</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Here are some of my featured projects that showcase my skills in full-stack development, 

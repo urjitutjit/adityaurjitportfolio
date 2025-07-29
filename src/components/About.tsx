@@ -7,9 +7,9 @@ const About = () => {
     <section id="about" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            About <span className="bg-gradient-hero bg-clip-text text-transparent">Me</span>
-          </h2>
+        <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 transition-transform duration-300 cursor-default">
+          About <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">Me</span>
+        </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             I'm a passionate full-stack developer currently pursuing B.Tech in Computer Science (2022–2026) 
             at Noida Institute of Engineering and Technology. I specialize in building robust and scalable 

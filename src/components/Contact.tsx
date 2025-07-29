@@ -92,9 +92,9 @@ const Contact = () => {
     <section id="contact" className="py-20 px-6 bg-card/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Let's <span className="bg-gradient-hero bg-clip-text text-transparent">Connect</span>
-          </h2>
+        <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 hover:scale-105 transition-transform duration-300 cursor-default">
+          Let's <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">Connect</span>
+        </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Have a project in mind or want to collaborate? I'd love to hear from you! 
             Feel free to reach out through any of the channels below.

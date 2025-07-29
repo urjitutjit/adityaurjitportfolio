@@ -77,6 +77,9 @@ export default {
 				'card': 'var(--shadow-card)',
 				'intense': 'var(--shadow-intense)'
 			},
+			dropShadow: {
+				'glow': 'var(--drop-shadow-glow)'
+			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
 				'bounce': 'var(--transition-bounce)'
