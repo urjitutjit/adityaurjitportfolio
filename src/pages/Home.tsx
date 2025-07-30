@@ -15,7 +15,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background with Nature Images */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background/60 to-accent/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95"></div>
           
           {/* Floating Nature Images */}
           <div className="absolute top-10 left-10 w-32 h-32 rounded-full overflow-hidden opacity-30 animate-pulse">
