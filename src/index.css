@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* GreenPrompt Design System - Light Mode */
-    --background: 140 20% 98%;
-    --foreground: 140 90% 5%;
+    /* Developer Portfolio Design System - Light Mode Fallback */
+    --background: 215 28% 97%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
-    --card-foreground: 140 90% 5%;
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 140 90% 5%;
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 140 30% 95%;
-    --secondary-foreground: 140 90% 10%;
-    --muted: 140 30% 95%;
-    --muted-foreground: 140 20% 50%;
-    --accent: 160 84% 39%;
-    --accent-foreground: 0 0% 98%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 198 93% 60%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 186 100% 94%;
+    --accent-foreground: 198 93% 60%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 140 30% 90%;
-    --input: 140 30% 90%;
-    --ring: 142 76% 36%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 198 93% 60%;
     --radius: 0.75rem;
     
-    /* GreenPrompt Eco-Tech Colors */
-    --green-primary: 142 76% 36%;       /* Forest Green #16A34A */
-    --green-accent: 160 84% 39%;        /* Emerald #059669 */
-    --green-light: 138 76% 97%;         /* Very Light Green */
-    --gray-tech: 220 9% 46%;            /* Professional Gray */
+    /* Custom Portfolio Colors */
+    --hero-primary: 198 93% 60%;        /* Sky Blue #38BDF8 */
+    --hero-accent: 186 100% 69%;        /* Cyan #22D3EE */
+    --navy-dark: 222 47% 11%;           /* Dark Navy #0F172A */
+    --slate-light: 210 20% 98%;         /* Light Text #F1F5F9 */
     
     /* Advanced Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--green-primary)), hsl(var(--green-accent)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--green-light)), hsl(140 30% 95%));
-    --gradient-border: linear-gradient(90deg, hsl(var(--green-primary)), transparent, hsl(var(--green-accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-primary)), hsl(var(--hero-accent)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--navy-dark)), hsl(222 47% 15%));
+    --gradient-border: linear-gradient(90deg, hsl(var(--hero-primary)), transparent, hsl(var(--hero-accent)));
     
     /* Shadows & Effects */
-    --shadow-glow: 0 0 50px hsl(var(--green-primary) / 0.3);
-    --shadow-card: 0 10px 40px hsl(140 20% 10% / 0.1);
-    --shadow-intense: 0 25px 60px hsl(var(--green-primary) / 0.4);
+    --shadow-glow: 0 0 50px hsl(var(--hero-primary) / 0.3);
+    --shadow-card: 0 10px 40px hsl(222 47% 5% / 0.3);
+    --shadow-intense: 0 25px 60px hsl(var(--hero-primary) / 0.4);
     
     /* Text Effects */
-    --drop-shadow-glow: drop-shadow(0 0 8px hsl(var(--green-primary) / 0.6));
+    --drop-shadow-glow: drop-shadow(0 0 8px hsl(var(--hero-primary) / 0.6));
     
     /* Animation Variables */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,34 +71,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* GreenPrompt Dark Theme */
-    --background: 140 20% 8%;               /* Dark Green Background */
-    --foreground: 140 20% 98%;              /* Light Text */
-    --card: 140 20% 10%;                    /* Slightly lighter cards */
-    --card-foreground: 140 20% 98%;
-    --popover: 140 20% 10%;
-    --popover-foreground: 140 20% 98%;
-    --primary: 142 76% 45%;                 /* Bright Green Primary */
-    --primary-foreground: 140 20% 8%;
-    --secondary: 140 20% 12%;
-    --secondary-foreground: 140 20% 98%;
-    --muted: 140 20% 12%;
-    --muted-foreground: 140 20% 65%;
-    --accent: 160 84% 50%;                  /* Emerald Accent */
-    --accent-foreground: 140 20% 8%;
+    /* Primary Dark Theme - Aditya's Portfolio */
+    --background: 222 47% 11%;              /* Dark Navy Background */
+    --foreground: 210 20% 98%;              /* Light Text */
+    --card: 222 47% 13%;                    /* Slightly lighter cards */
+    --card-foreground: 210 20% 98%;
+    --popover: 222 47% 13%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 198 93% 60%;                 /* Sky Blue Primary */
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 186 100% 69%;                 /* Cyan Accent */
+    --accent-foreground: 222 47% 11%;
     --destructive: 0 62.8% 50%;
-    --destructive-foreground: 140 20% 98%;
-    --border: 140 20% 18%;
-    --input: 140 20% 12%;
-    --ring: 142 76% 45%;
-    --sidebar-background: 140 20% 6%;
-    --sidebar-foreground: 140 20% 95%;
-    --sidebar-primary: 142 76% 45%;
-    --sidebar-primary-foreground: 140 20% 8%;
-    --sidebar-accent: 140 20% 10%;
-    --sidebar-accent-foreground: 140 20% 95%;
-    --sidebar-border: 140 20% 15%;
-    --sidebar-ring: 142 76% 45%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 222 47% 20%;
+    --input: 222 47% 15%;
+    --ring: 198 93% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
