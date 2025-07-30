@@ -13,7 +13,6 @@ import Autoplay from "embla-carousel-autoplay";
 import campusEatsImg from "@/assets/campus-eats-project.jpg";
 import pixelForgeImg from "@/assets/pixelforge-project.jpg";
 import cricketImg from "@/assets/cricket-project.jpg";
-import binanceTradingImg from "@/assets/binance-trading-bot.jpg";
 
 const Projects = () => {
   const projects = [
@@ -42,15 +41,6 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB", "Real-time APIs", "Analytics"],
       liveLink: "https://cricket-o-meter.vercel.app/",
       githubLink: null,
-      featured: true
-    },
-    {
-      title: "Binance Futures Trading Bot",
-      description: "Automated cryptocurrency trading bot for Binance Futures with advanced order management, risk controls, and real-time market analysis. Features intelligent position sizing and profit optimization.",
-      image: binanceTradingImg,
-      technologies: ["Python", "Binance API", "Futures Trading", "Risk Management", "Automation"],
-      liveLink: null,
-      githubLink: "https://github.com/urjitutjit/urjitutjit-Binance-Futures-Order-TradingBot.git",
       featured: true
     }
   ];
