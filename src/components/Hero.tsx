@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="space-y-6 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
             Hi, I'm{" "}
-            <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">
+            <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300 animate-pulse inline-block hover:animate-bounce">
               Aditya Urjit
             </span>
           </h1>
