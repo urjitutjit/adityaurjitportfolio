@@ -53,7 +53,10 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-hero hover:shadow-glow transition-all duration-300 group"
-              onClick={() => window.location.href = '/auth'}
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get Started
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
