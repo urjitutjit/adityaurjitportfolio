@@ -160,7 +160,7 @@ const Dashboard = () => {
                   <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
                     <div>
                       <p className="font-medium">RSI Oversold</p>
-                      <p className="text-sm text-muted-foreground">RSI < 30</p>
+                      <p className="text-sm text-muted-foreground">RSI &lt; 30</p>
                     </div>
                     <span className="text-sm text-red-600">-8.2%</span>
                   </div>
