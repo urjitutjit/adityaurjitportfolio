@@ -2,6 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import campusEatsImg from "@/assets/campus-eats-project.jpg";
 import pixelForgeImg from "@/assets/pixelforge-project.jpg";
 import cricketImg from "@/assets/cricket-project.jpg";
@@ -50,77 +58,93 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Card 
-              key={project.title}
-              className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-intense transition-all duration-500 group overflow-hidden"
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                {project.featured && (
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-gradient-hero text-navy-dark font-semibold hover:scale-105 transition-transform duration-300 cursor-default">
-                      Featured
-                    </Badge>
-                  </div>
-                )}
-              </div>
-              
-              <CardContent className="p-6">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300 cursor-default">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  
-                  <div className="flex gap-3 pt-4">
-                    {project.liveLink && (
-                      <Button 
-                        asChild
-                        className="bg-gradient-hero hover:shadow-glow hover:scale-105 transition-all duration-300 group"
-                      >
-                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
-                          Live Demo
-                        </a>
-                      </Button>
-                    )}
-                    
-                    {project.githubLink && (
-                      <Button 
-                        variant="outline"
-                        asChild
-                        className="border-primary/30 hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
-                      >
-                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
-                          GitHub
-                        </a>
-                      </Button>
+        <Carousel
+          className="w-full max-w-5xl mx-auto"
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {projects.map((project, index) => (
+              <CarouselItem key={project.title} className="md:basis-1/2 lg:basis-1/2">
+                <Card 
+                  className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-intense transition-all duration-500 group overflow-hidden h-full"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {project.featured && (
+                      <div className="absolute top-4 left-4">
+                        <Badge className="bg-gradient-hero text-navy-dark font-semibold hover:scale-105 transition-transform duration-300 cursor-default">
+                          Featured
+                        </Badge>
+                      </div>
                     )}
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                  
+                  <CardContent className="p-6">
+                    <div className="space-y-4">
+                      <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h3>
+                      
+                      <p className="text-muted-foreground leading-relaxed">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300 cursor-default">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      
+                      <div className="flex gap-3 pt-4">
+                        {project.liveLink && (
+                          <Button 
+                            asChild
+                            className="bg-gradient-hero hover:shadow-glow hover:scale-105 transition-all duration-300 group"
+                          >
+                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                              Live Demo
+                            </a>
+                          </Button>
+                        )}
+                        
+                        {project.githubLink && (
+                          <Button 
+                            variant="outline"
+                            asChild
+                            className="border-primary/30 hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
+                          >
+                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                              <Github className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                              GitHub
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hover:scale-110 transition-transform duration-300" />
+          <CarouselNext className="hover:scale-110 transition-transform duration-300" />
+        </Carousel>
 
         {/* View More Projects */}
         <div className="text-center mt-16">
