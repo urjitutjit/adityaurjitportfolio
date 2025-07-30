@@ -70,10 +70,10 @@ const Skills = () => {
             >
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-background/50">
-                    <category.icon className={`h-6 w-6 ${category.color}`} />
+                  <div className="p-2 rounded-lg bg-background/50 group-hover:bg-primary/10 transition-colors">
+                    <category.icon className={`h-6 w-6 ${category.color} group-hover:scale-110 transition-transform`} />
                   </div>
-                  <h3 className="text-xl font-display font-semibold">{category.title}</h3>
+                  <h3 className="text-xl font-display font-semibold group-hover:text-primary transition-colors">{category.title}</h3>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
@@ -81,7 +81,7 @@ const Skills = () => {
                     <Badge 
                       key={skill}
                       variant="secondary" 
-                      className="hover:bg-primary/20 hover:text-primary transition-colors cursor-default"
+                      className="hover:bg-primary/20 hover:text-primary hover:scale-105 transition-all duration-300 cursor-default"
                     >
                       {skill}
                     </Badge>

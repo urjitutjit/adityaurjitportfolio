@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="font-display font-bold text-xl bg-gradient-hero bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="font-display font-bold text-xl bg-gradient-hero bg-clip-text text-transparent hover:opacity-80 hover:scale-105 transition-all duration-300"
           >
             Aditya Urjit
           </button>
@@ -48,10 +48,10 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 relative group"
+                className="text-muted-foreground hover:text-primary hover:scale-105 transition-all duration-300 relative group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
           </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden hover:scale-110 transition-all duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -74,7 +74,7 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-2 text-muted-foreground hover:text-primary transition-colors"
+                className="block w-full text-left py-2 text-muted-foreground hover:text-primary hover:scale-105 hover:bg-primary/5 rounded-md transition-all duration-300"
               >
                 {item.label}
               </button>

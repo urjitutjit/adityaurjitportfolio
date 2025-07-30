@@ -65,7 +65,7 @@ const Projects = () => {
                 />
                 {project.featured && (
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-gradient-hero text-navy-dark font-semibold">
+                    <Badge className="bg-gradient-hero text-navy-dark font-semibold hover:scale-105 transition-transform duration-300 cursor-default">
                       Featured
                     </Badge>
                   </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                   
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
+                      <Badge key={tech} variant="outline" className="text-xs hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300 cursor-default">
                         {tech}
                       </Badge>
                     ))}
@@ -94,10 +94,10 @@ const Projects = () => {
                     {project.liveLink && (
                       <Button 
                         asChild
-                        className="bg-gradient-hero hover:shadow-glow transition-all duration-300"
+                        className="bg-gradient-hero hover:shadow-glow hover:scale-105 transition-all duration-300 group"
                       >
                         <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
+                          <ExternalLink className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
                           Live Demo
                         </a>
                       </Button>
@@ -107,10 +107,10 @@ const Projects = () => {
                       <Button 
                         variant="outline"
                         asChild
-                        className="border-primary/30 hover:bg-primary/10 transition-all duration-300"
+                        className="border-primary/30 hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
                       >
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
+                          <Github className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
                           GitHub
                         </a>
                       </Button>
@@ -128,10 +128,10 @@ const Projects = () => {
             variant="outline" 
             size="lg"
             asChild
-            className="border-primary/30 hover:bg-primary/10 hover:shadow-glow transition-all duration-300"
+            className="border-primary/30 hover:bg-primary/10 hover:shadow-glow hover:scale-105 transition-all duration-300 group"
           >
             <a href="https://github.com/urjitutjit" target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5 mr-2" />
+              <Github className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
               View All Projects on GitHub
             </a>
           </Button>

@@ -50,7 +50,7 @@ const About = () => {
                   <p className="text-foreground font-medium">Full-Stack Development</p>
                   <p className="text-muted-foreground">MERN Stack, Java, Python</p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <Button variant="outline" size="sm">Active Learner</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">Active Learner</Button>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const About = () => {
                       <h4 className="text-lg font-display font-semibold text-primary">Backend Developer Intern</h4>
                       <p className="text-foreground font-medium">Internshala</p>
                     </div>
-                    <Button variant="secondary" size="sm">Remote</Button>
+                    <Button variant="secondary" size="sm" className="hover:scale-105 transition-all duration-300">Remote</Button>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Built scalable backend modules for 10,000+ users</li>
@@ -80,9 +80,9 @@ const About = () => {
                     <li>• Implemented error tracking with Sentry monitoring</li>
                   </ul>
                   <div className="flex flex-wrap gap-2">
-                    <Button variant="outline" size="sm">Node.js</Button>
-                    <Button variant="outline" size="sm">REST APIs</Button>
-                    <Button variant="outline" size="sm">Sentry</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">Node.js</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">REST APIs</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">Sentry</Button>
                   </div>
                 </div>
               </CardContent>
@@ -97,7 +97,7 @@ const About = () => {
                       <h4 className="text-lg font-display font-semibold text-primary">SDE Intern</h4>
                       <p className="text-foreground font-medium">BlueStock</p>
                     </div>
-                    <Button variant="secondary" size="sm">Remote</Button>
+                    <Button variant="secondary" size="sm" className="hover:scale-105 transition-all duration-300">Remote</Button>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Worked on system design and backend architecture</li>
@@ -105,9 +105,9 @@ const About = () => {
                     <li>• Collaborated on scalable solution development</li>
                   </ul>
                   <div className="flex flex-wrap gap-2">
-                    <Button variant="outline" size="sm">System Design</Button>
-                    <Button variant="outline" size="sm">Backend Logic</Button>
-                    <Button variant="outline" size="sm">Performance</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">System Design</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">Backend Logic</Button>
+                    <Button variant="outline" size="sm" className="hover:bg-primary/10 hover:text-primary hover:scale-105 transition-all duration-300">Performance</Button>
                   </div>
                 </div>
               </CardContent>

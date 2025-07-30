@@ -177,13 +177,13 @@ const Contact = () => {
                     <a
                       key={info.label}
                       href={info.href}
-                      className="flex items-center gap-4 p-4 rounded-lg bg-background/50 hover:bg-primary/10 transition-colors group"
+                      className="flex items-center gap-4 p-4 rounded-lg bg-background/50 hover:bg-primary/10 hover:scale-105 transition-all duration-300 group"
                     >
-                      <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <info.icon className="h-5 w-5 text-primary" />
+                      <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                        <info.icon className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
                       </div>
                       <div>
-                        <p className="font-medium">{info.label}</p>
+                        <p className="font-medium group-hover:text-primary transition-colors">{info.label}</p>
                         <p className="text-muted-foreground">{info.value}</p>
                       </div>
                     </a>
@@ -203,12 +203,12 @@ const Contact = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex flex-col items-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-primary/10 transition-all duration-300 group ${link.color}`}
+                      className={`flex flex-col items-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-primary/10 hover:scale-105 transition-all duration-300 group ${link.color}`}
                     >
-                      <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <link.icon className="h-6 w-6" />
+                      <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                        <link.icon className="h-6 w-6 group-hover:scale-110 transition-transform" />
                       </div>
-                      <span className="font-medium text-sm">{link.label}</span>
+                      <span className="font-medium text-sm group-hover:text-primary transition-colors">{link.label}</span>
                     </a>
                   ))}
                 </div>

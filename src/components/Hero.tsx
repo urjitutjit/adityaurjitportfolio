@@ -38,13 +38,13 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-3 justify-center text-sm md:text-base">
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full border border-primary/20">
+            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full border border-primary/20 hover:bg-primary/20 hover:scale-105 transition-all duration-300 cursor-default">
               Full-Stack Developer
             </span>
-            <span className="px-4 py-2 bg-accent/10 text-accent rounded-full border border-accent/20">
+            <span className="px-4 py-2 bg-accent/10 text-accent rounded-full border border-accent/20 hover:bg-accent/20 hover:scale-105 transition-all duration-300 cursor-default">
               MERN & Java Specialist
             </span>
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full border border-primary/20">
+            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full border border-primary/20 hover:bg-primary/20 hover:scale-105 transition-all duration-300 cursor-default">
               Backend Enthusiast
             </span>
           </div>
@@ -69,11 +69,11 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow transition-all duration-300"
+              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow hover:scale-105 transition-all duration-300 group"
               onClick={() => scrollToSection('contact')}
             >
               Hire Me
-              <ExternalLink className="ml-2 h-4 w-4" />
+              <ExternalLink className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
             </Button>
           </div>
 
@@ -83,25 +83,25 @@ const Hero = () => {
               href="https://github.com/urjitutjit" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:bg-primary/10 hover:border-primary/30 transition-all duration-300 group"
+              className="p-3 rounded-full bg-card border border-border hover:bg-primary/10 hover:border-primary/30 hover:scale-110 transition-all duration-300 group"
             >
-              <Github className="h-5 w-5 group-hover:text-primary transition-colors" />
+              <Github className="h-5 w-5 group-hover:text-primary group-hover:scale-110 transition-all duration-300" />
             </a>
             <a 
               href="https://www.linkedin.com/in/aditya-urjit-a5598a223/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:bg-primary/10 hover:border-primary/30 transition-all duration-300 group"
+              className="p-3 rounded-full bg-card border border-border hover:bg-primary/10 hover:border-primary/30 hover:scale-110 transition-all duration-300 group"
             >
-              <Linkedin className="h-5 w-5 group-hover:text-primary transition-colors" />
+              <Linkedin className="h-5 w-5 group-hover:text-primary group-hover:scale-110 transition-all duration-300" />
             </a>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-muted-foreground" />
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-110 transition-transform duration-300 cursor-pointer">
+        <ArrowDown className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
       </div>
     </section>
   );
