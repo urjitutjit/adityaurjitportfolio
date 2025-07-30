@@ -62,10 +62,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'hero-primary': 'hsl(var(--hero-primary))',
-				'hero-accent': 'hsl(var(--hero-accent))',
-				'navy-dark': 'hsl(var(--navy-dark))',
-				'slate-light': 'hsl(var(--slate-light))'
+				'green-primary': 'hsl(var(--green-primary))',
+				'green-accent': 'hsl(var(--green-accent))',
+				'green-light': 'hsl(var(--green-light))',
+				'gray-tech': 'hsl(var(--gray-tech))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
