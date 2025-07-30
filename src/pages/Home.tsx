@@ -29,7 +29,7 @@ const Home = () => {
             
             <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
               Reduce energy waste by 20% using LLMs. Smart prompt library for EV optimization. 
-              Built for eco-tech companies like Green Rider.
+              Built for eco-tech and clean mobility companies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -67,8 +67,8 @@ const Home = () => {
               
               <div className="bg-card border border-border rounded-lg p-6 hover:shadow-glow transition-all duration-300 group">
                 <Target className="h-8 w-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold mb-2">Built for Green Rider</h3>
-                <p className="text-muted-foreground text-sm">Designed for eco-tech and clean mobility</p>
+                <h3 className="text-lg font-semibold mb-2">Built for Clean Mobility</h3>
+                <p className="text-muted-foreground text-sm">Designed for eco-tech and sustainable transport</p>
               </div>
             </div>
           </div>

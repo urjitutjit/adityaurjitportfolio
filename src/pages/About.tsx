@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Leaf, Target, Users, Zap, Github, ExternalLink, ArrowRight } from "lucide-react";
+import { Leaf, Target, Users, Zap, Github, ExternalLink, ArrowRight, Bot } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -45,11 +45,6 @@ const About = () => {
 
   const team = [
     {
-      name: "Green Rider Technology",
-      role: "Strategic Partner",
-      description: "Leading clean mobility platform providing domain expertise and real-world testing environment."
-    },
-    {
       name: "AI Research Team",
       role: "Technical Development",
       description: "Specialists in LLM optimization, prompt engineering, and sustainable AI applications."
@@ -78,8 +73,8 @@ const About = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             GreenPrompt is the first intelligent prompt automation platform specifically designed for sustainable 
-            EV operations. Born from the partnership with Green Rider Technology, we're revolutionizing how 
-            eco-tech companies leverage AI for cleaner, more efficient transportation.
+            EV operations. We're revolutionizing how eco-tech companies leverage AI for cleaner, 
+            more efficient transportation.
           </p>
         </div>
 
@@ -117,38 +112,47 @@ const About = () => {
           </div>
         </div>
 
-        {/* Green Rider Partnership */}
+        {/* Industry Focus */}
         <Card className="mb-16 border-primary/30">
           <CardHeader>
-            <CardTitle className="text-2xl text-center">Partnership with Green Rider Technology</CardTitle>
+            <CardTitle className="text-2xl text-center">Industry Focus</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="text-center">
               <p className="text-muted-foreground mb-6">
-                GreenPrompt was developed in close collaboration with Green Rider Technology, 
-                a leading clean mobility platform. This partnership ensures our AI solutions 
-                address real-world challenges in sustainable transportation.
+                GreenPrompt is specifically designed for sustainable transportation and clean mobility companies. 
+                Our AI solutions address real-world challenges in the EV industry.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Leaf className="h-8 w-8 text-primary" />
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Clean Mobility Focus</h3>
+                <h3 className="font-semibold mb-2">Domain Expertise</h3>
                 <p className="text-sm text-muted-foreground">
-                  Shared commitment to sustainable transportation solutions
+                  Deep understanding of EV operations and sustainability metrics
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Bot className="h-8 w-8 text-accent" />
+                </div>
+                <h3 className="font-semibold mb-2">AI Innovation</h3>
+                <p className="text-sm text-muted-foreground">
+                  Cutting-edge prompt engineering for EV optimization
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="font-semibold mb-2">Real-World Testing</h3>
                 <p className="text-sm text-muted-foreground">
-                  Live validation with Green Rider's EV fleet operations
+                  Live validation with EV fleet operations
                 </p>
               </div>
               
@@ -220,9 +224,9 @@ const About = () => {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-semibold mb-2">Green Rider Platform</h3>
+                  <h3 className="font-semibold mb-2">Documentation</h3>
                   <p className="text-sm text-muted-foreground">
-                    Visit our partner's clean mobility platform
+                    Comprehensive guides and API documentation
                   </p>
                 </div>
                 <ExternalLink className="h-8 w-8 text-muted-foreground group-hover:text-accent transition-colors" />

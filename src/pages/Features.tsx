@@ -43,7 +43,7 @@ const Features = () => {
     "Predictive battery life modeling",
     "Route optimization for minimal carbon footprint",
     "Fleet-wide efficiency analytics",
-    "Integration with Green Rider systems",
+    "Third-party EV platform integrations",
     "Multi-model LLM support (GPT-4, Claude, etc.)"
   ];
 

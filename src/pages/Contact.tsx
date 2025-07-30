@@ -86,9 +86,9 @@ const Contact = () => {
     },
     {
       icon: <ExternalLink className="h-5 w-5" />,
-      title: "Green Rider",
-      value: "Partner Platform",
-      link: "https://greenrider.tech"
+      title: "Documentation",
+      value: "API Docs",
+      link: "https://docs.greenprompt.ai"
     }
   ];
 

@@ -223,9 +223,9 @@ const Templates = () => {
         {/* Featured Section */}
         <div className="bg-card border border-border rounded-xl p-8">
           <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold mb-2">Featured: Green Rider Integration</h2>
+            <h2 className="text-2xl font-bold mb-2">Featured: EV Fleet Templates</h2>
             <p className="text-muted-foreground">
-              Templates specifically designed for Green Rider's clean mobility platform
+              Templates specifically designed for clean mobility and EV fleet optimization
             </p>
           </div>
           
