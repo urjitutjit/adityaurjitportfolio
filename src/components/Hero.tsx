@@ -26,9 +26,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="space-y-6 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
+          <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight animate-bounce hover:scale-105 transition-transform duration-300 cursor-default">
             Hi, I'm{" "}
-            <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300 animate-pulse inline-block hover:animate-bounce">
+            <span className="bg-gradient-hero bg-clip-text text-transparent hover:drop-shadow-glow transition-all duration-300">
               Aditya Urjit
             </span>
           </h1>
