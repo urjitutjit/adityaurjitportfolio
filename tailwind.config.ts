@@ -119,6 +119,16 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg)',
+						textShadow: '0 0 20px rgba(147, 51, 234, 0.3)'
+					},
+					'50%': { 
+						transform: 'translateY(-10px) rotate(1deg)',
+						textShadow: '0 0 30px rgba(147, 51, 234, 0.5)'
+					}
 				}
 			},
 			animation: {
