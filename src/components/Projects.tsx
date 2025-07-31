@@ -58,27 +58,27 @@ const Projects = () => {
     },
     {
       title: "WhatsApp-Driven Google Drive Assistant",
-      description: "Intelligent WhatsApp bot that seamlessly integrates with Google Drive for automated file management. Features include file uploads, downloads, sharing, and organization through simple WhatsApp commands.",
+      description: "A powerful n8n workflow that enables WhatsApp-based Google Drive management through simple text commands. Features include file operations (LIST, DELETE, MOVE), AI-powered document summarization with OpenAI GPT-4, and comprehensive audit logging.",
       image: whatsappDriveImg,
-      technologies: ["Python", "WhatsApp API", "Google Drive API", "Automation", "Bot Development"],
+      technologies: ["n8n", "Twilio WhatsApp API", "Google Drive API", "OpenAI GPT-4", "Docker", "OAuth2"],
       liveLink: null,
       githubLink: "https://github.com/urjitutjit/WhatsApp-Driven-Google-Drive-Assistant-Project.git",
       featured: true
     },
     {
       title: "Court Data Fetcher & Mini-Dashboard",
-      description: "Comprehensive legal data management system with automated court data fetching and visualization. Features real-time case tracking, analytics dashboard, and data export capabilities for legal professionals.",
+      description: "A comprehensive web application that fetches and displays case information from Delhi High Court website. Features automated CAPTCHA handling with Selenium, case search functionality, PDF downloads, and responsive dashboard with data export capabilities.",
       image: courtDataImg,
-      technologies: ["Python", "Data Scraping", "Dashboard", "Legal Tech", "Data Analytics"],
+      technologies: ["Python", "Flask", "Selenium WebDriver", "SQLite", "Bootstrap 5", "Docker"],
       liveLink: null,
       githubLink: "https://github.com/urjitutjit/Court-Data-Fetcher-Mini-Dashboard-Project.git",
       featured: true
     },
     {
       title: "Janitri Dashboard Login Page Automation",
-      description: "Advanced healthcare dashboard automation system with secure login functionality. Streamlines healthcare data management with automated testing and user authentication workflows.",
+      description: "Advanced automated test framework for healthcare dashboard login functionality using Java and Selenium WebDriver. Implements Page Object Model (POM) design pattern with comprehensive test scenarios covering UI validation, form behavior, and error handling using TestNG.",
       image: janitriDashboardImg,
-      technologies: ["Python", "Selenium", "Healthcare Tech", "Automation Testing", "Dashboard"],
+      technologies: ["Java 11", "Selenium WebDriver", "TestNG", "Maven", "Page Object Model", "Chrome WebDriver"],
       liveLink: null,
       githubLink: "https://github.com/urjitutjit/Janitri-Dashboard.git",
       featured: true
