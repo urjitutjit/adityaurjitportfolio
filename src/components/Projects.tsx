@@ -14,6 +14,9 @@ import campusEatsImg from "@/assets/campus-eats-project.jpg";
 import pixelForgeImg from "@/assets/pixelforge-project.jpg";
 import cricketImg from "@/assets/cricket-project.jpg";
 import tradingBotImg from "@/assets/trading-bot-project.jpg";
+import whatsappDriveImg from "@/assets/whatsapp-google-drive-assistant.jpg";
+import courtDataImg from "@/assets/court-data-fetcher-dashboard.jpg";
+import janitriDashboardImg from "@/assets/janitri-dashboard-login.jpg";
 
 const Projects = () => {
   const projects = [
@@ -51,6 +54,33 @@ const Projects = () => {
       technologies: ["Python", "Binance API", "Trading Algorithms", "Risk Management", "Automation"],
       liveLink: null,
       githubLink: "https://github.com/urjitutjit/urjitutjit-Binance-Futures-Order-TradingBot.git",
+      featured: true
+    },
+    {
+      title: "WhatsApp-Driven Google Drive Assistant",
+      description: "Intelligent WhatsApp bot that seamlessly integrates with Google Drive for automated file management. Features include file uploads, downloads, sharing, and organization through simple WhatsApp commands.",
+      image: whatsappDriveImg,
+      technologies: ["Python", "WhatsApp API", "Google Drive API", "Automation", "Bot Development"],
+      liveLink: null,
+      githubLink: "https://github.com/urjitutjit/WhatsApp-Driven-Google-Drive-Assistant-Project.git",
+      featured: true
+    },
+    {
+      title: "Court Data Fetcher & Mini-Dashboard",
+      description: "Comprehensive legal data management system with automated court data fetching and visualization. Features real-time case tracking, analytics dashboard, and data export capabilities for legal professionals.",
+      image: courtDataImg,
+      technologies: ["Python", "Data Scraping", "Dashboard", "Legal Tech", "Data Analytics"],
+      liveLink: null,
+      githubLink: "https://github.com/urjitutjit/Court-Data-Fetcher-Mini-Dashboard-Project.git",
+      featured: true
+    },
+    {
+      title: "Janitri Dashboard Login Page Automation",
+      description: "Advanced healthcare dashboard automation system with secure login functionality. Streamlines healthcare data management with automated testing and user authentication workflows.",
+      image: janitriDashboardImg,
+      technologies: ["Python", "Selenium", "Healthcare Tech", "Automation Testing", "Dashboard"],
+      liveLink: null,
+      githubLink: "https://github.com/urjitutjit/Janitri-Dashboard.git",
       featured: true
     }
   ];
