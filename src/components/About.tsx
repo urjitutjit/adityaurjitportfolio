@@ -17,7 +17,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-hero rounded-full blur opacity-30 group-hover:opacity-60 transition-all duration-300"></div>
               <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-all duration-300 group-hover:scale-105">
                 <img 
-                  src="/lovable-uploads/2cbe37b6-3b13-429f-9d6f-9d98847851ff.png" 
+                  src="/profile.png" 
                   alt="Aditya Urjit" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
