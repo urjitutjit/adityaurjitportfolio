@@ -55,7 +55,7 @@ const Resume = () => {
               asChild
             >
               <a 
-                href="https://drive.google.com/file/d/1U1TjFUXg6SchU06qlYPMMWAk016xiOmi/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1_t4KQtXZUGGloAAFtg1v9K9NWD4CO5zj/view?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
