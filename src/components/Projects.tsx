@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+
 import campusEatsImg from "@/assets/campus-eats-project.jpg";
 import pixelForgeImg from "@/assets/pixelforge-project.jpg";
 import cricketImg from "@/assets/cricket-project.jpg";
@@ -22,9 +22,9 @@ const Projects = () => {
   const projects = [
     {
       title: "Campus Eats",
-      description: "MERN stack food delivery app with JWT authentication, real-time WebSocket order tracking, and Vercel deployment. Features include user authentication, restaurant management, and live order updates.",
+      description: "Full-stack food delivery platform with comprehensive user authentication, shopping cart, order tracking, and admin dashboard. Features secure JWT authentication, MongoDB integration, and Vercel deployment for both frontend and backend.",
       image: campusEatsImg,
-      technologies: ["React.js", "Node.js", "MongoDB", "JWT", "WebSocket", "Vercel"],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "bcryptjs", "Vercel"],
       liveLink: "https://insta-canteen-connect.vercel.app/",
       githubLink: null,
       featured: true
@@ -40,9 +40,9 @@ const Projects = () => {
     },
     {
       title: "Cricket-o-Meter",
-      description: "Real-time cricket prediction and analytics app built with MERN stack. Features live match data, predictive analytics, and interactive dashboards for cricket enthusiasts.",
+      description: "Comprehensive Spring Boot backend for real-time cricket match insights with live score updates, player statistics, and WebSocket support. Features RESTful APIs, H2 database, and Vercel deployment for seamless cricket data management.",
       image: cricketImg,
-      technologies: ["React.js", "Node.js", "MongoDB", "Real-time APIs", "Analytics"],
+      technologies: ["Java 17", "Spring Boot", "Spring WebSocket", "H2 Database", "Maven", "Vercel"],
       liveLink: "https://cricket-o-meter.vercel.app/",
       githubLink: null,
       featured: true
@@ -100,11 +100,6 @@ const Projects = () => {
 
         <Carousel
           className="w-full max-w-5xl mx-auto"
-          plugins={[
-            Autoplay({
-              delay: 4000,
-            }),
-          ]}
           opts={{
             align: "center",
             loop: true,
