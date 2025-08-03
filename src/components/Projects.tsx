@@ -17,6 +17,7 @@ import tradingBotImg from "@/assets/trading-bot-project.jpg";
 import whatsappDriveImg from "@/assets/whatsapp-google-drive-assistant.jpg";
 import courtDataImg from "@/assets/court-data-fetcher-dashboard.jpg";
 import janitriDashboardImg from "@/assets/janitri-dashboard-login.jpg";
+import miniLinkedInImg from "@/assets/mini-linkedin-project.jpg";
 
 const Projects = () => {
   const projects = [
@@ -81,6 +82,15 @@ const Projects = () => {
       technologies: ["Java 11", "Selenium WebDriver", "TestNG", "Maven", "Page Object Model", "Chrome WebDriver"],
       liveLink: null,
       githubLink: "https://github.com/urjitutjit/Janitri-Dashboard.git",
+      featured: true
+    },
+    {
+      title: "Mini LinkedIn - Professional Community Platform",
+      description: "A modern, full-stack social networking platform inspired by LinkedIn, built with cutting-edge technologies for professional networking and community engagement. Features user authentication, post management, user profiles, search functionality, and real-time interactions.",
+      image: miniLinkedInImg,
+      technologies: ["Next.js 14", "TypeScript", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
+      liveLink: "https://linkedinminiurjit.vercel.app/",
+      githubLink: "https://github.com/urjitutjit/linkedinmini.git",
       featured: true
     }
   ];
