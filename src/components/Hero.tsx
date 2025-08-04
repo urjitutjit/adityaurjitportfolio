@@ -73,15 +73,6 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-primary/30 hover:bg-primary/10 hover:shadow-glow hover:scale-105 transition-all duration-300 group"
-              onClick={() => scrollToSection('contact')}
-            >
-              Hire Me
-              <ExternalLink className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary/30 hover:bg-primary/10 hover:shadow-glow hover:scale-105 transition-all duration-300 group"
               onClick={() => window.open('https://drive.google.com/file/d/1_t4KQtXZUGGloAAFtg1v9K9NWD4CO5zj/view?usp=drive_link', '_blank')}
             >
               View Resume
