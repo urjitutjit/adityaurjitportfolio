@@ -24,9 +24,9 @@ const Index = () => {
         </div>
         <About />
         <Skills />
+        <Resume />
         <Projects />
         <Services />
-        <Resume />
         <Contact />
       </main>
       <ScrollToTop />
