@@ -73,46 +73,8 @@ const Resume = () => {
           </h3>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {achievements.map((achievement, index) => {
-              const CardComponent = achievement.link ? (
-                <a 
-                  href={achievement.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block cursor-pointer"
-                >
-                  <Card 
-                    className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow hover:drop-shadow-glow transition-all duration-300 group cursor-pointer"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                          <Award className="h-6 w-6 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2">
-                            <h4 className="text-lg font-display font-semibold group-hover:text-primary transition-colors">
-                              {achievement.title}
-                            </h4>
-                            <ExternalLink className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                          </div>
-                          <p className="text-foreground font-medium mb-1">{achievement.organization}</p>
-                          <div className="flex items-center justify-between">
-                            <Badge variant="secondary" className="text-xs">
-                              {achievement.type}
-                            </Badge>
-                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                              <Calendar className="h-4 w-4" />
-                              {achievement.year}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </a>
-              ) : (
+            {achievements.map((achievement, index) => (
+              <div key={achievement.title}>
                 <Card 
                   className="bg-gradient-card border-border/50 hover:border-primary/30 hover:shadow-glow hover:drop-shadow-glow transition-all duration-300 group"
                   style={{ animationDelay: `${index * 100}ms` }}
@@ -140,14 +102,8 @@ const Resume = () => {
                     </div>
                   </CardContent>
                 </Card>
-              );
-
-              return (
-                <div key={achievement.title}>
-                  {CardComponent}
-                </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
 
